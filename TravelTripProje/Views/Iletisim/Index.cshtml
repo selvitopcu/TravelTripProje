@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="contact">
+    <div class="wrap">
+        <div class="contact-top">
+            <h3>İletişim Bilgilerimiz</h3>
+            <p> Bize 24 saat belirttiğimiz telefon numarasından, sosyal medya hesaplarımızdan, mail adresimizden ulaşabilirsiniz. Dilediğiniz soruları sorabilir, gezmek istediğiniz yerler hakkında fikir danışabilir, dilerseniz bizleri ziyarete ofis adresimize gelebilirsiniz </p>
+            <p>Deneyimlerimi sizinle paylaşmak için sabırsızlanıyor, sizin deneyimlerinizin bir parçası olmak için sabırsızlanıyorum.</p>
+            <p>Görüşmek dileğiyle..</p>
+        </div>
+        <div class="form">
+            <form class="cmxform" id="contactForm" method="post">
+                <div>
+                    <input type="text" class="textbox" value="İsim:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+                </div>
+                <div>
+                    <input type="text" class="textbox" value="Mail:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+                </div>
+                <div>
+                    <input type="text" class="textbox" value="Telefon:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}">
+                </div>
+                <div>
+                    <p><span class="read">Gönder</span></p>
+                </div>
+            </form>
+        </div>
+        <div class="form1">
+            <div>
+                <textarea value="Mesaj:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
+            </div>
+        </div>
+ 
+        <div class="clear"></div>
+        <div class="contact-bottom">
+            <br />
+            <div class="contact-left">
+                <div class="contact-add">
+                    <h3>Adres 1</h3>
+                    <p>Üsküdar/İSTANBUL</p>
+                    <p>Telefon:0500 000 11 22 </p>
+                    <p>Mail:<a href="mailto:selvi.kdb@gmail.com">selvi.kdb@gmail.com</a></p>
+                </div>
+                <div class="contact-add">
+                    <h3>Adres 2</h3>
+                    <p>Serdivan/SAKARYA</p>
+                    <p>Fax:1-22-5555</p>
+                    <p>Mail:<a href="mailto:selviitopcuu@gmail.com">selviitopcuu@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="contact-map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24077.43649082732!2d29.011338324658553!3d41.032265989417425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab78eb4cc28d7%3A0xd6cc13bd2c633762!2zw5xza8O8ZGFyLCBLdXpndW5jdWssIDM0Njc0IMOcc2vDvGRhci_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1690233733899!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                @*<iframe width="580" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Rashelle+Way,+San+Ramon,+CA,+United+States&amp;aq=0&amp;oq=rash&amp;sll=44.308127,-111.75293&amp;sspn=22.280521,53.569336&amp;ie=UTF8&amp;hq=&amp;hnear=Rashelle+Way,+San+Ramon,+Contra+Costa,+California+94582,+United+States&amp;ll=37.768294,-121.922369&amp;spn=0.001503,0.00327&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Rashelle+Way,+San+Ramon,+CA,+United+States&amp;aq=0&amp;oq=rash&amp;sll=44.308127,-111.75293&amp;sspn=22.280521,53.569336&amp;ie=UTF8&amp;hq=&amp;hnear=Rashelle+Way,+San+Ramon,+Contra+Costa,+California+94582,+United+States&amp;ll=37.768294,-121.922369&amp;spn=0.001503,0.00327&amp;t=m&amp;z=14&amp;iwloc=A" style="color: #555;text-align:left">View Larger Map</a></small>*@
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

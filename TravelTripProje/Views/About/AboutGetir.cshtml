@@ -1,0 +1,24 @@
+﻿@model TravelTripProje.Models.Siniflar.Hakkimizda
+@{
+    ViewBag.Title = "AboutGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Hakkımızda Güncelleme Sayfası</h2>
+<br />
+
+
+@using (Html.BeginForm("AboutUpdate", "About", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.ID)
+    <br />
+    @Html.LabelFor(x => x.FotoUrl)
+    @Html.TextBoxFor(x => x.FotoUrl, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Aciklama)
+    @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+    <br />
+    <br />
+    <button class="btn btn-info">Hakkımızda Güncelle</button>
+}
